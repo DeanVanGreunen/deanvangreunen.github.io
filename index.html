@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="bundle.js" defer></script>
+    <title>Paper Tanks</title>
+    <style>
+        html, body {
+            font-family: 'PencilRegular';
+            padding: 0;
+            margin: 0;
+        }
+        #container {      
+            display: grid;      
+            place-items: center;
+            min-height: 100vh;
+        }
+        #canvas {
+            display: block;
+            background: #e5e5e5;
+            margin: 0 auto;
+            border-radius: 8px;
+            width: 620px;
+            height: 480px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">       
+        <div>
+            <span style="padding-left:8px;"><strong>Player Instructions</strong></span><br/>
+            <span style="padding-left:32px;"><strong>Move Player</strong> Up, Down, Left and Right Arrows.</span><br/>
+            <span style="padding-left:32px;"><strong>Fire Bullet:</strong> Spacebar.</span>
+            <canvas id="canvas" width="620px" height="480px"></canvas>
+        </div>
+    </div>
+</body>
+</html>
